@@ -5,7 +5,8 @@
 
 .logo {
     width: 20%;
-    padding: 1%;
+   margin-left: 2em;
+   padding-top: 1%;
     text-align: center;
 }
 
@@ -27,7 +28,7 @@ nav li {
 
 
 img {
-    max-height: 100%;
+    max-width: 100%;
 }
 
 
@@ -39,12 +40,12 @@ p {
 
 #heroText {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 39.06px;
+    font-size: 2.5vw;
 }
 .decorativeText {
     color: #6E6CE7;
     font-weight: 900;
-    font-size: 48.83px;
+    font-size: 3.5vw;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -59,7 +60,7 @@ p {
 }
 
 .content {
-    height: 40vh;
+    height: 40%;
     width: 85%;
     display: flex;
     align-items: center;
@@ -71,7 +72,7 @@ p {
 }
 
 #heroImage {
-    width: 50%;
+    width: 100%;
     box-shadow: 25px 20px #6e6ce7;
     height: inherit;
     margin-right: 2em;
@@ -101,13 +102,119 @@ p {
     text-align: center;
 }
 
-h4 {
+h3 {
     display: flex;
     justify-content: center;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.middleSection {
-    padding: 30em 0
+.item1 {
+    grid-area: Wonder;
+    background-color: #FEEAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 1em 2em;
 }
+
+.item2 {
+    grid-area: Pawmates;
+    background-color: #D9F6F1;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 1em 2em;
+}
+
+.item3 {
+    grid-area: Nubudget;
+    background-color: #F9F8C7;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 1em 2em;
+}
+
+.item4 {
+    grid-area: Energy;
+    background-color: #DEE2FF;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    padding: 1em 2em;
+}
+
+.workGrid {
+display: grid;
+border: red solid;
+height: 110%;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "Wonder Pawmates" 
+"Nubudget Energy";
+padding: 2em;
+grid-row-gap: 2em;
+grid-column-gap: 2em;
+margin: 1em;
+  
+}
+
+.workGrid > div > div {
+   width: 70%;
+   margin: auto;
+}
+
+.caseStudyButton {
+    text-align: end; 
+}
+
+.caseStudyButton:link {
+    color: black !important;
+}
+
+.caseStudyButton:visited {
+    color: black !important;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+h2 {
+    margin-left: 4em
+}
+
+.scalingText {
+    font-size: 2vw;
+    color: black;
+}
+
+.workGridImgSmall {
+    width: 45% !important;
+    height: auto;
+}
+
+.workGridImgDiv {
+    justify-content: space-between;
+
+}
+
+
+@media only screen and (max-width: 600px) {
+    .workGrid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "Wonder" 
+        "Pawmates" 
+        "Nubudget" 
+        "Energy";
+        
+        }
+
+    .content {
+        flex-direction: column-reverse;
+  }
