@@ -5,8 +5,8 @@
 
 .logo {
     width: 20%;
-   margin-left: 2em;
-   padding-top: 1%;
+    margin-left: 2em;
+    padding-top: 1%;
     text-align: center;
 }
 
@@ -147,7 +147,6 @@ h3 {
 
 .workGrid {
 display: grid;
-border: red solid;
 height: 110%;
 grid-template-columns: 1fr 1fr;
 grid-template-rows: 1fr 1fr;
@@ -212,9 +211,66 @@ h2 {
         "Pawmates" 
         "Nubudget" 
         "Energy";
-        
         }
 
     .content {
+        padding-top: 0em;
         flex-direction: column-reverse;
-  }
+        width: 60%;
+        padding-bottom: 0em;
+        }
+
+    #heroImage {
+        width: 80%;
+        margin-left: 2em;
+        box-shadow: 12.5px 10px #6e6ce7;
+    }
+
+    #heroText {
+        text-align: center;
+        margin: 2em auto;
+        
+    }
+
+    #workTitle {
+        text-align: center;
+        margin-left: 0%;
+    }
+
+    .navigation {
+        flex-direction: column;
+    }
+
+    .logo {
+        margin: 1% auto;
+        padding-left: 2em;
+        width: 30%;
+    }
+
+    nav {
+        margin: 1% auto;
+        padding: 0;
+    }
+
+ .navList {
+    padding-left: 0;
+
+ }
+
+ .scalingText {
+    font-size: medium;
+ }
+
+ .footer p {
+    font-size: small;
+}
+
+.footer h3 {
+    font-size: medium;
+}
+
+
+
+}
+
+  
